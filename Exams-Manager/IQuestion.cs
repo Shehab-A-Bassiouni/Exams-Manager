@@ -12,5 +12,8 @@ namespace Exams_Manager
         public string Body { get; set; }
         public IAnswers Answer  { get; set; }
 
+        public int Mark { get; set; }
+
+
     }
 }

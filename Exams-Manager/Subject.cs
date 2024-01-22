@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Exams_Manager
 {
-    internal interface IAnswers
+    internal class Subject
     {
-        string RightAnswer { get; set; }
-        public string[] Options { get; set; }
+        private string name;
+
+        public string Name { get => name; set => name = value; }
     }
 }

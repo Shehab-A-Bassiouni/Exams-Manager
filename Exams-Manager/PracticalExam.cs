@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace Exams_Manager
 {
-    internal interface IAnswers
+    internal class PracticalExam:Exam
     {
-        string RightAnswer { get; set; }
-        public string[] Options { get; set; }
+        public PracticalExam() {
+
+            Questions = new();
+            Subject = new();
+        }
     }
 }

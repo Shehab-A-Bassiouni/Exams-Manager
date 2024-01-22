@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Exams_Manager
-build_property.ProjectDir = C:\Users\swesh\OneDrive\Desktop\New folder (3)\Exams-Manager\
+build_property.ProjectDir = C:\Users\swesh\OneDrive\Desktop\C# Late Labs\Exams-Manager\Exams-Manager\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

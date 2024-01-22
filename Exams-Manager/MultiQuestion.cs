@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace Exams_Manager
 {
-    internal class MultiQuestion:IQuestion
+    internal class MultiQuestion : IQuestion
     {
+        public string Header { get; set; }
+        public string Body { get; set; }
+        public IAnswers Answer { get; set; }
+        public int Mark { get; set; }
 
+
+        public MultiQuestion()
+        {
+            Answer = new MultiAnswer();
+        }
     }
 }

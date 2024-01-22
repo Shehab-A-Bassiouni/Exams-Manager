@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace Exams_Manager
 {
-    internal class Exam
+    internal abstract class Exam
     {
         private QuestionsList<IQuestion> questions;
+        private Subject subject;
+        private int mark;
 
+        public int Mark { get => mark; set => mark = value; }
         internal QuestionsList<IQuestion> Questions { get => questions; set => questions = value; }
-
-        public Exam(QuestionsList<IQuestion> _questions)
-        {
-            questions = _questions;
-        }
+        internal Subject Subject { get => subject; set => subject = value; }
     }
 }
