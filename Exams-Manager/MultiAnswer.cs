@@ -12,6 +12,7 @@ namespace Exams_Manager
         public string RightAnswer { get; set; }
         public string[] Options { get; set; }
 
+
         public MultiAnswer() {
             Options = new string[4];
         }

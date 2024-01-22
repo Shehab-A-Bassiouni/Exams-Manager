@@ -107,11 +107,11 @@ namespace Exams_Manager
 
                 foreach (var y in x.Answer.Options) {
                     Console.WriteLine(y);
-                    Console.WriteLine(x.Answer.GetType().Name);
                 }
 
+                Console.WriteLine("Answer");
 
-               /* sae.QA[x].Add(Console.ReadLine());*/
+                sae.QA[x].Add(Console.ReadLine());
                 
             }
             int marks = 0;
