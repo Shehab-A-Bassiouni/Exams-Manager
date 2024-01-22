@@ -4,17 +4,25 @@
     {
         static void Main(string[] args)
         {
-            int size = 2;
+
+            List<Exam> list = new List<Exam>(); 
+            int size = 1;
             for (int i = 0; i < size ; i++) {
-                Exam exam = Generation.AddExam();
+                list.Add(Generation.AddExam());
 
                 Console.WriteLine("---------------------------");
 
-                Generation.AddQuestionsToExam(exam);
+                Generation.AddQuestionsToExam(list[i]);
+
 
                 Console.WriteLine("---------------------------");
 
             }
+
+            StudentAnswerExam std = new(list[0]);
+           int mark = Generation.AssignExamAndAnswer( std,list[0]);
+
+            Console.WriteLine($"Your mark is {mark}");
 
 
 

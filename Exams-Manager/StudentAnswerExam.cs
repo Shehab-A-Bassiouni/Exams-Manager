@@ -10,7 +10,7 @@ namespace Exams_Manager
     {
         public Exam Exam { get; set; }
 
-        public Dictionary<IQuestion, string> QA { get; set;}
+        public Dictionary<IQuestion, List<string>> QA { get; set;}
 
         public StudentAnswerExam(Exam _Exam) {
             Exam = _Exam;

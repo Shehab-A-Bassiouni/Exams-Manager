@@ -6,14 +6,17 @@ using System.Threading.Tasks;
 
 namespace Exams_Manager
 {
-    internal class MultiAnswer : IAnswers
+    internal class MMAnswer:IAnswers
     {
-
         public string RightAnswer { get; set; }
         public string[] Options { get; set; }
 
-        public MultiAnswer() {
+        public string[] RightAnswers { get; set; }
+
+        public MMAnswer() {
             Options = new string[4];
         }
+
+
     }
 }

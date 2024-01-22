@@ -34,13 +34,17 @@ namespace Exams_Manager
         // ADD Question To Exam
         public static void AddQuestionsToExam(Exam exam) {
             IQuestion q;
-            Console.WriteLine("Enter Question Type : M/TF");
+            Console.WriteLine("Enter Question Type : M/TF/MM");
 
             string ans = Console.ReadLine();
 
             if (ans == "M")
             {
                 q = new MultiQuestion();
+            }
+            else if (ans == "MM") { 
+                q = new MMQuestion();
+
             }
             else {
                 q = new ToFQuestion();
@@ -54,7 +58,7 @@ namespace Exams_Manager
             q.Mark = int.Parse(Console.ReadLine());
 
 
-            if (ans == "M")
+            if (ans == "M" || ans=="MM")
             {
                 for (int i = 1; i <= 4; i++)
                 {
@@ -63,15 +67,27 @@ namespace Exams_Manager
                 }
             }
 
-            else {
+            else
+            {
                 q.Answer.Options[0] = "true";
                 q.Answer.Options[1] = "false";
 
             }
 
             Console.WriteLine("Enter Question Correct Answer");
-            q.Answer.RightAnswer = Console.ReadLine();
+            if (ans == "MM") {
+                Console.WriteLine("Number of Correct Answers");
+                int x = int.Parse(Console.ReadLine());
 
+                var tmp = (MMAnswer)q.Answer;
+                tmp.RightAnswers = new string[x];
+                for (int i = 0; i < x; i++) {
+                    tmp.RightAnswers[i] = Console.ReadLine();
+                }
+            }
+            else { 
+            q.Answer.RightAnswer = Console.ReadLine();
+            }
             exam.Questions.Add(q);
 
         }
@@ -91,15 +107,15 @@ namespace Exams_Manager
 
                 foreach (var y in x.Answer.Options) {
                     Console.WriteLine(y);
+                    Console.WriteLine(x.Answer.GetType().Name);
                 }
 
-                sae.QA[x] = Console.ReadLine();
 
+               /* sae.QA[x].Add(Console.ReadLine());*/
+                
             }
             int marks = 0;
-            foreach (var x in sae.QA) {
-                if (x.Key.Answer.RightAnswer == x.Value) marks++;
-            }
+            
             return marks;
         }
     }
