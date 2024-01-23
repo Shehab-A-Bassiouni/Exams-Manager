@@ -58,36 +58,32 @@ namespace Exams_Manager
             q.Mark = int.Parse(Console.ReadLine());
 
 
-            if (ans == "M" || ans=="MM")
+
+            string options = "";
+
+            Console.WriteLine("Enter Options");
+            do
             {
-                for (int i = 1; i <= 4; i++)
-                {
-                    Console.WriteLine($"Enter Question Option {i}");
-                    q.Answer.Options[i - 1] = Console.ReadLine();
+                options = Console.ReadLine();
+                if (options != "-1") {
+                    q.Answer.Options.Add(options);
                 }
-            }
-
-            else
-            {
-                q.Answer.Options[0] = "true";
-                q.Answer.Options[1] = "false";
-
-            }
+            } while (options != "-1");
+                               
 
             Console.WriteLine("Enter Question Correct Answer");
-            if (ans == "MM") {
-                Console.WriteLine("Number of Correct Answers");
-                int x = int.Parse(Console.ReadLine());
 
-                var tmp = (MMAnswer)q.Answer;
-                tmp.RightAnswers = new string[x];
-                for (int i = 0; i < x; i++) {
-                    tmp.RightAnswers[i] = Console.ReadLine();
+            string answ = "";
+
+            do
+            {
+                answ = Console.ReadLine();
+                if (answ != "-1")
+                {
+                    q.Answer.RightAnswer.Add(answ);
                 }
-            }
-            else { 
-            q.Answer.RightAnswer = Console.ReadLine();
-            }
+            } while (answ != "-1");
+
             exam.Questions.Add(q);
 
         }
@@ -98,6 +94,7 @@ namespace Exams_Manager
 
 
             foreach (var x in exam.Questions) {
+                sae.QA.Add(x, new());
                 Console.WriteLine("Answer The Following Questions");
 
                 Console.WriteLine(x.Header);
@@ -111,10 +108,26 @@ namespace Exams_Manager
 
                 Console.WriteLine("Answer");
 
-                sae.QA[x].Add(Console.ReadLine());
+                string answ="";
+
+                do
+                {
+                     answ = Console.ReadLine();
+                    if (answ != "-1") {
+                        sae.QA[x].Add(answ);
+                    }
+                } while (answ != "-1");
+
                 
             }
             int marks = 0;
+            bool flag = true;
+            foreach (var qa in sae.QA) {
+                foreach (var ans in qa.Value) {
+                    if (!qa.Key.Answer.RightAnswer.Contains(ans)) flag = false; ;
+                }
+                if (flag) marks += qa.Key.Mark;
+            }
             
             return marks;
         }

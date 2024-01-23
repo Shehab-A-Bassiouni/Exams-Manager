@@ -9,11 +9,12 @@ namespace Exams_Manager
     internal class ToFAnswer:IAnswers
     {
 
-        public string RightAnswer { get; set; }
-        public string[] Options { get; set; }
+        public List<string> RightAnswer { get; set; }
+        public List<string> Options { get; set; }
 
         public ToFAnswer() {
-            Options = new string[2];
+            Options = new();
+            RightAnswer = new();
         }
     }
 }

@@ -43,3 +43,18 @@ C:\Users\swesh\OneDrive\Desktop\Delivery\Exams-Manager 6-7-8\Exams-Manager\obj\D
 C:\Users\swesh\OneDrive\Desktop\Delivery\Exams-Manager 6-7-8\Exams-Manager\obj\Debug\net8.0\Exams-Manager.pdb
 C:\Users\swesh\OneDrive\Desktop\Delivery\Exams-Manager 6-7-8\Exams-Manager\obj\Debug\net8.0\Exams-Manager.genruntimeconfig.cache
 C:\Users\swesh\OneDrive\Desktop\Delivery\Exams-Manager 6-7-8\Exams-Manager\obj\Debug\net8.0\ref\Exams-Manager.dll
+C:\Users\swesh\OneDrive\Desktop\To Deliver\Lab 8\Exams-Manager\Exams-Manager\obj\Debug\net8.0\Exams-Manager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\swesh\OneDrive\Desktop\To Deliver\Lab 8\Exams-Manager\Exams-Manager\obj\Debug\net8.0\Exams-Manager.AssemblyInfoInputs.cache
+C:\Users\swesh\OneDrive\Desktop\To Deliver\Lab 8\Exams-Manager\Exams-Manager\obj\Debug\net8.0\Exams-Manager.AssemblyInfo.cs
+C:\Users\swesh\OneDrive\Desktop\To Deliver\Lab 8\Exams-Manager\Exams-Manager\obj\Debug\net8.0\Exams-Manager.csproj.CoreCompileInputs.cache
+C:\Users\swesh\OneDrive\Desktop\To Deliver\Lab 8\Exams-Manager\Exams-Manager\obj\Debug\net8.0\Exams-Manager.sourcelink.json
+C:\Users\swesh\OneDrive\Desktop\To Deliver\Lab 8\Exams-Manager\Exams-Manager\obj\Debug\net8.0\Exams-Manager.dll
+C:\Users\swesh\OneDrive\Desktop\To Deliver\Lab 8\Exams-Manager\Exams-Manager\obj\Debug\net8.0\refint\Exams-Manager.dll
+C:\Users\swesh\OneDrive\Desktop\To Deliver\Lab 8\Exams-Manager\Exams-Manager\obj\Debug\net8.0\Exams-Manager.pdb
+C:\Users\swesh\OneDrive\Desktop\To Deliver\Lab 8\Exams-Manager\Exams-Manager\bin\Debug\net8.0\Exams-Manager.exe
+C:\Users\swesh\OneDrive\Desktop\To Deliver\Lab 8\Exams-Manager\Exams-Manager\bin\Debug\net8.0\Exams-Manager.deps.json
+C:\Users\swesh\OneDrive\Desktop\To Deliver\Lab 8\Exams-Manager\Exams-Manager\bin\Debug\net8.0\Exams-Manager.runtimeconfig.json
+C:\Users\swesh\OneDrive\Desktop\To Deliver\Lab 8\Exams-Manager\Exams-Manager\bin\Debug\net8.0\Exams-Manager.dll
+C:\Users\swesh\OneDrive\Desktop\To Deliver\Lab 8\Exams-Manager\Exams-Manager\bin\Debug\net8.0\Exams-Manager.pdb
+C:\Users\swesh\OneDrive\Desktop\To Deliver\Lab 8\Exams-Manager\Exams-Manager\obj\Debug\net8.0\Exams-Manager.genruntimeconfig.cache
+C:\Users\swesh\OneDrive\Desktop\To Deliver\Lab 8\Exams-Manager\Exams-Manager\obj\Debug\net8.0\ref\Exams-Manager.dll

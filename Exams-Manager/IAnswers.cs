@@ -8,7 +8,7 @@ namespace Exams_Manager
 {
     internal interface IAnswers
     {
-        string RightAnswer { get; set; }
-        public string[] Options { get; set; }
+        List<string> RightAnswer { get; set; }
+        public List<string> Options { get; set; }
     }
 }
